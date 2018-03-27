@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:700);
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: radial-gradient(ellipse at center,  #004A4A, #000000 70%);
+    font-size: 2em;
+}
+
+.clock {
+    font-family: 'Noto Serif', serif;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    color: #B4BCBC;
+    text-shadow: 0 0 45px black;
+}
+
+div span {
+    float: left;
+
+}
+div div {
+    float: left;
+}
