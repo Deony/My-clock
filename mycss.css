@@ -1,28 +1,59 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:700);
 
-html,body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 body {
     background: radial-gradient(ellipse at center,  #004A4A, #000000 70%);
-    font-size: 2em;
+}
+
+.mainClock {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alarm {
+    width: 20%;    
+}
+
+.alarm .alarmSign {
+    color: white;
+    width: 23%;
+    opacity: 0.4;
+    display: block;
+}
+
+.alarm .setAlarmTime {
+    color: white;
+    display: none;
+    font-size: 1em;
+}
+
+.alarm .timeAlarmHour, .timeAlarmMinute {
+    display: none;
+}
+
+.alarmSign:hover {
+    opacity: 1;
 }
 
 .clock {
     font-family: 'Noto Serif', serif;
-    position: absolute;
-    left: 40%;
-    top: 45%;
+    float: left;
     color: #B4BCBC;
     text-shadow: 0 0 45px black;
+    font-size: 3em;
 }
 
-div span {
+.clock span {
     float: left;
-
 }
-div div {
+
+.clock .hour, .minute, .second {
     float: left;
 }
